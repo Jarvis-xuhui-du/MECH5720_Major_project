@@ -218,3 +218,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Local environments and generated replay outputs
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+.DS_Store
+Thumbs.db
+reproduced/
+
+# Full acquisition archive is distributed as a Release asset
+/data/
+/02_raw_data_release.zip
+
+# Keep analysis/cache and analysis/results: their scientific arrays are required.

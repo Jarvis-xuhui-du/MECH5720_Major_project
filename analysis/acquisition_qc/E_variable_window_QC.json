@@ -1,0 +1,263 @@
+{
+  "runs": [
+    {
+      "condition": "E_variable_coded",
+      "run": "motion_20260826_014705",
+      "candidate_based_on_trajectory_QC": {
+        "condition": "E_variable_coded",
+        "run": "motion_20260826_014705",
+        "frame": 5,
+        "start_s": 6.717639508,
+        "end_s": 7.717581508,
+        "depth_change_mm": -37.52805978951221,
+        "depth_range_mm": 37.81410493470696,
+        "max_deviation_from_endpoint_linear_depth_mm": 21.782884045125456,
+        "in_exposure_lidar_n": 10,
+        "coded_log_coverage_margin50ms": true,
+        "overlaps_irregular_screen_interval": false
+      },
+      "max_approach_in_any_covered_exposure_mm": 47.17748185588721,
+      "screen_intervals_outside_50_to350ms": [],
+      "status": "CANDIDATE_AVAILABLE; TIMING_CONDITIONAL"
+    },
+    {
+      "condition": "E_variable_coded",
+      "run": "motion_20260826_014845",
+      "candidate_based_on_trajectory_QC": {
+        "condition": "E_variable_coded",
+        "run": "motion_20260826_014845",
+        "frame": 6,
+        "start_s": 8.660986910999998,
+        "end_s": 9.660928911,
+        "depth_change_mm": -27.78937253779179,
+        "depth_range_mm": 28.954741091261667,
+        "max_deviation_from_endpoint_linear_depth_mm": 17.90206793950415,
+        "in_exposure_lidar_n": 11,
+        "coded_log_coverage_margin50ms": true,
+        "overlaps_irregular_screen_interval": false
+      },
+      "max_approach_in_any_covered_exposure_mm": 27.78937253779179,
+      "screen_intervals_outside_50_to350ms": [
+        {
+          "after_sequence": 39,
+          "from_s": 9.917465517,
+          "to_s": 15.823796661,
+          "gap_s": 5.906331143999999
+        },
+        {
+          "after_sequence": 40,
+          "from_s": 15.823796661,
+          "to_s": 15.82484713,
+          "gap_s": 0.001050469000000831
+        },
+        {
+          "after_sequence": 41,
+          "from_s": 15.82484713,
+          "to_s": 15.825931401,
+          "gap_s": 0.001084270999999859
+        },
+        {
+          "after_sequence": 42,
+          "from_s": 15.825931401,
+          "to_s": 15.82699239,
+          "gap_s": 0.0010609889999990685
+        },
+        {
+          "after_sequence": 43,
+          "from_s": 15.82699239,
+          "to_s": 15.828082963,
+          "gap_s": 0.0010905730000008163
+        },
+        {
+          "after_sequence": 44,
+          "from_s": 15.828082963,
+          "to_s": 15.829219682,
+          "gap_s": 0.0011367189999997862
+        },
+        {
+          "after_sequence": 45,
+          "from_s": 15.829219682,
+          "to_s": 15.830318536,
+          "gap_s": 0.0010988540000003155
+        },
+        {
+          "after_sequence": 46,
+          "from_s": 15.830318536,
+          "to_s": 15.831422442,
+          "gap_s": 0.0011039059999990997
+        },
+        {
+          "after_sequence": 47,
+          "from_s": 15.831422442,
+          "to_s": 15.832469942,
+          "gap_s": 0.001047500000000312
+        },
+        {
+          "after_sequence": 48,
+          "from_s": 15.832469942,
+          "to_s": 15.833652286,
+          "gap_s": 0.0011823440000000573
+        },
+        {
+          "after_sequence": 49,
+          "from_s": 15.833652286,
+          "to_s": 15.834724213,
+          "gap_s": 0.001071926999999917
+        },
+        {
+          "after_sequence": 50,
+          "from_s": 15.834724213,
+          "to_s": 15.835807494,
+          "gap_s": 0.0010832810000014348
+        },
+        {
+          "after_sequence": 51,
+          "from_s": 15.835807494,
+          "to_s": 15.836889525,
+          "gap_s": 0.0010820309999992617
+        },
+        {
+          "after_sequence": 52,
+          "from_s": 15.836889525,
+          "to_s": 15.837967025,
+          "gap_s": 0.0010774999999991763
+        },
+        {
+          "after_sequence": 53,
+          "from_s": 15.837967025,
+          "to_s": 15.839024109,
+          "gap_s": 0.0010570840000010406
+        },
+        {
+          "after_sequence": 54,
+          "from_s": 15.839024109,
+          "to_s": 15.840103171,
+          "gap_s": 0.001079062000000519
+        },
+        {
+          "after_sequence": 55,
+          "from_s": 15.840103171,
+          "to_s": 15.84115515,
+          "gap_s": 0.0010519789999996476
+        },
+        {
+          "after_sequence": 56,
+          "from_s": 15.84115515,
+          "to_s": 15.842213484,
+          "gap_s": 0.001058333999999661
+        },
+        {
+          "after_sequence": 57,
+          "from_s": 15.842213484,
+          "to_s": 15.843313432,
+          "gap_s": 0.0010999480000002393
+        },
+        {
+          "after_sequence": 58,
+          "from_s": 15.843313432,
+          "to_s": 15.844518588,
+          "gap_s": 0.0012051559999992634
+        }
+      ],
+      "status": "CANDIDATE_AVAILABLE; TIMING_CONDITIONAL"
+    },
+    {
+      "condition": "E_variable_coded",
+      "run": "motion_20260826_015006",
+      "candidate_based_on_trajectory_QC": null,
+      "max_approach_in_any_covered_exposure_mm": 9.046024339191035,
+      "screen_intervals_outside_50_to350ms": [],
+      "status": "WEAK_IN_EXPOSURE_MOTION; KEEP_AND_ADD_REPEAT"
+    },
+    {
+      "condition": "E_variable_coded_extra",
+      "run": "motion_20260826_020242",
+      "candidate_based_on_trajectory_QC": {
+        "condition": "E_variable_coded_extra",
+        "run": "motion_20260826_020242",
+        "frame": 4,
+        "start_s": 4.774509105,
+        "end_s": 5.774451105,
+        "depth_change_mm": -35.97085440164312,
+        "depth_range_mm": 35.98197885196453,
+        "max_deviation_from_endpoint_linear_depth_mm": 19.587674988996696,
+        "in_exposure_lidar_n": 11,
+        "coded_log_coverage_margin50ms": true,
+        "overlaps_irregular_screen_interval": false
+      },
+      "max_approach_in_any_covered_exposure_mm": 35.97085440164312,
+      "screen_intervals_outside_50_to350ms": [],
+      "status": "CANDIDATE_AVAILABLE; TIMING_CONDITIONAL"
+    },
+    {
+      "condition": "E_variable_white",
+      "run": "motion_20260826_014610",
+      "candidate_based_on_trajectory_QC": null,
+      "max_approach_in_any_covered_exposure_mm": 6.9944622720408915,
+      "screen_intervals_outside_50_to350ms": [],
+      "status": "WEAK_IN_EXPOSURE_MOTION; KEEP_AND_ADD_REPEAT"
+    },
+    {
+      "condition": "E_variable_white",
+      "run": "motion_20260826_014746",
+      "candidate_based_on_trajectory_QC": {
+        "condition": "E_variable_white",
+        "run": "motion_20260826_014746",
+        "frame": 4,
+        "start_s": 4.774845846,
+        "end_s": 5.774787846,
+        "depth_change_mm": -26.9998756335051,
+        "depth_range_mm": 28.732902864272774,
+        "max_deviation_from_endpoint_linear_depth_mm": 14.393845916844498,
+        "in_exposure_lidar_n": 11,
+        "coded_log_coverage_margin50ms": true,
+        "overlaps_irregular_screen_interval": false
+      },
+      "max_approach_in_any_covered_exposure_mm": 53.06714579408026,
+      "screen_intervals_outside_50_to350ms": [],
+      "status": "CANDIDATE_AVAILABLE; TIMING_CONDITIONAL"
+    },
+    {
+      "condition": "E_variable_white",
+      "run": "motion_20260826_014922",
+      "candidate_based_on_trajectory_QC": {
+        "condition": "E_variable_white",
+        "run": "motion_20260826_014922",
+        "frame": 4,
+        "start_s": 4.774760174,
+        "end_s": 5.774702174,
+        "depth_change_mm": -24.453398663223993,
+        "depth_range_mm": 25.471799895711,
+        "max_deviation_from_endpoint_linear_depth_mm": 16.706169458482464,
+        "in_exposure_lidar_n": 11,
+        "coded_log_coverage_margin50ms": true,
+        "overlaps_irregular_screen_interval": false
+      },
+      "max_approach_in_any_covered_exposure_mm": 24.453398663223993,
+      "screen_intervals_outside_50_to350ms": [],
+      "status": "CANDIDATE_AVAILABLE; TIMING_CONDITIONAL"
+    },
+    {
+      "condition": "E_variable_white_extra",
+      "run": "motion_20260826_020138",
+      "candidate_based_on_trajectory_QC": {
+        "condition": "E_variable_white_extra",
+        "run": "motion_20260826_020138",
+        "frame": 5,
+        "start_s": 6.717792539,
+        "end_s": 7.717734539,
+        "depth_change_mm": -32.61423362218625,
+        "depth_range_mm": 32.61423362218625,
+        "max_deviation_from_endpoint_linear_depth_mm": 14.140656927574696,
+        "in_exposure_lidar_n": 10,
+        "coded_log_coverage_margin50ms": true,
+        "overlaps_irregular_screen_interval": false
+      },
+      "max_approach_in_any_covered_exposure_mm": 32.61423362218625,
+      "screen_intervals_outside_50_to350ms": [],
+      "status": "CANDIDATE_AVAILABLE; TIMING_CONDITIONAL"
+    }
+  ],
+  "quality_rule_disclosure": "Supplementary exploratory capture QC: depth-bracketed and code-covered window, approach displacement at least15mm; rank by departure from endpoint-linear depth. Introduced during supplement inspection, not preregistered and not based on reconstruction scores. Keep all original captures and disclose additional attempts.",
+  "timing_boundary": "Operational exposure-end sensor timestamp; Pi host receipt for depth and events. Conditional, not hardware synchronized."
+}

@@ -1,0 +1,68 @@
+{
+  "ROI_xyxy": [
+    230,
+    45,
+    550,
+    95
+  ],
+  "independent_timing_runs": 1,
+  "runs": [
+    {
+      "run": "motion_20260826_020826",
+      "readable_DNGs": 151,
+      "events": 60,
+      "sequence_complete_0_to_59": true,
+      "same_player_run_id": true,
+      "states": [
+        0,
+        1
+      ],
+      "actual_exposure_us": [
+        19969
+      ],
+      "median_saved_frame_interval_ms": 129.5819999999992,
+      "event_span_s": 11.799366193,
+      "median_event_interval_ms": 201.38125000000073,
+      "event_interval_range_ms": [
+        185.99078099999923,
+        204.69901000000013
+      ],
+      "max_paper_saturation_percent": 0.0,
+      "receive_minus_sensor_ms_min_median_max": [
+        51.550461,
+        52.738866,
+        69.608742
+      ],
+      "failures": [],
+      "conditional_optical_alignment": {
+        "timestamp_as_exposure_end": {
+          "effective_offset_ms": 31.000000000000306,
+          "R_squared": 0.9850773034939322,
+          "n_camera_observations_fit": 86,
+          "fitted_black_level_fraction_fullscale": 0.0017481934090895013,
+          "fitted_white_level_fraction_fullscale": 0.019982465217465346,
+          "fitted_black_white_ratio": 0.0874863731808987,
+          "R2_within_0p01_of_peak_offset_interval_ms": [
+            28.000000000000302,
+            36.00000000000031
+          ],
+          "note": "Fit plateau is not a confidence interval. Grid step is not timing accuracy. Offset includes timestamp convention, readout, display, UDP and other delays."
+        },
+        "timestamp_as_exposure_start": {
+          "effective_offset_ms": 51.00000000000032,
+          "R_squared": 0.9850752092290586,
+          "n_camera_observations_fit": 86,
+          "fitted_black_level_fraction_fullscale": 0.001747649642762588,
+          "fitted_white_level_fraction_fullscale": 0.01998172869419218,
+          "fitted_black_white_ratio": 0.08746238473703997,
+          "R2_within_0p01_of_peak_offset_interval_ms": [
+            48.00000000000032,
+            56.00000000000033
+          ],
+          "note": "Fit plateau is not a confidence interval. Grid step is not timing accuracy. Offset includes timestamp convention, readout, display, UDP and other delays."
+        }
+      }
+    }
+  ],
+  "interpretation_boundary": "Short-exposure observations assess a conditional camera/UDP alignment model. They do not independently establish camera exposure start/end semantics or precise screen optical delay; sampling is sparse relative to 200ms bits. Fit uses a fixed paper patch and integrates announced states over each assumed exposure interval."
+}

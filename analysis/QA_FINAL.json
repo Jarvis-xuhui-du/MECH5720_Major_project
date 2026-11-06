@@ -1,0 +1,210 @@
+{
+  "date": "2026-10-31",
+  "verdict": "PASS",
+  "checks": [
+    {
+      "check": "Dataset accounting",
+      "passed": true,
+      "detail": {
+        "runs": 40,
+        "DNGs": 1239,
+        "attempts": 16
+      }
+    },
+    {
+      "check": "Primary repeated pushes",
+      "passed": true,
+      "detail": "12 primary pushes, six coded"
+    },
+    {
+      "check": "RAW files and clipping audit",
+      "passed": true,
+      "detail": {
+        "readable_DNGs": 1239,
+        "minor_clipping_exceptions": [
+          {
+            "condition": "A_white70_1s",
+            "run": "motion_20260825_232720",
+            "frame": 1,
+            "saturated_pct": 0.0003255208333333
+          },
+          {
+            "condition": "A_white70_1s",
+            "run": "motion_20260825_232720",
+            "frame": 3,
+            "saturated_pct": 0.0003255208333333
+          }
+        ],
+        "interpretation": "Two initial static-white frames each have one clipped RAW sensel; these are not hidden or described as globally unclipped."
+      }
+    },
+    {
+      "check": "PSNR_dB summary consistency",
+      "passed": true,
+      "detail": {
+        "mean": 3.0384941271029384,
+        "sample_SD": 3.6664042858488965,
+        "min": -1.114608947411977,
+        "max": 8.879567463400388,
+        "positive_trials": 5,
+        "n": 6
+      }
+    },
+    {
+      "check": "SSIM summary consistency",
+      "passed": true,
+      "detail": {
+        "mean": 0.08426264921824138,
+        "sample_SD": 0.07966102799569319,
+        "min": -0.023918449878692627,
+        "max": 0.17906689643859863,
+        "positive_trials": 5,
+        "n": 6
+      }
+    },
+    {
+      "check": "Failure cases retained",
+      "passed": true,
+      "detail": "S2 loses to linear; V3 loses to input"
+    },
+    {
+      "check": "Original source hashes",
+      "passed": true,
+      "detail": {
+        "files_verified": 1444
+      }
+    },
+    {
+      "check": "All saved images and score tables agree",
+      "passed": true,
+      "detail": {
+        "canonical_NPZs": 16,
+        "max_abs_metric_difference": 3.552713678800501e-15,
+        "primary_mask_pixels": 28327,
+        "feature_mask_pixels": 13639
+      }
+    },
+    {
+      "check": "Figures checked",
+      "passed": true,
+      "detail": {
+        "figures": [
+          "fig01_acquisition_bounds",
+          "fig02_paired_coded_effects",
+          "fig03_sensitivity",
+          "fig04_all_coded_reconstructions",
+          "fig05_measured_trajectories",
+          "fig06_setup_documentation"
+        ],
+        "alignment": "Comparable multipanel groups PASS; alignment is not applicable to the single-panel sensitivity figure",
+        "collisions": "All PASS",
+        "text": "All PASS",
+        "note": "300dpi raster meets the export floor; it does not add detail beyond the supplied photograph resolution. Editable PDF/SVG and original JPEGs are included."
+      }
+    },
+    {
+      "check": "Apparatus photo provenance",
+      "passed": true,
+      "detail": "Five byte-for-byte original JPEGs; complete-image plate; labels are outside the images; no camera settings or geometric offsets inferred from appearances."
+    },
+    {
+      "check": "Photo update preserves numerical results",
+      "passed": true,
+      "detail": {
+        "unchanged_tables": [
+          "all_attempts_PSNR_SSIM.csv",
+          "primary_12_trials_PSNR_SSIM.csv",
+          "coded_6_trials_PSNR_SSIM.csv",
+          "sensitivity_summary.csv"
+        ],
+        "reference_archive": "MECH5720_Supplement_Analysis_20261031.zip"
+      }
+    },
+    {
+      "check": "Operator numerical checks",
+      "passed": true,
+      "detail": {
+        "identity_error": 3.5762786865234375e-07,
+        "row_sum_error": 2.384185791015625e-07,
+        "adjoint_relative_error": 7.038834894507809e-07,
+        "synthetic_input": {
+          "PSNR_dB": 13.986634458053555,
+          "SSIM": 0.5411707162857056,
+          "MSE": 0.039933424443006516,
+          "pixels": 31500
+        },
+        "synthetic_reconstruction": {
+          "PSNR_dB": 27.145306864886848,
+          "SSIM": 0.9731442928314209,
+          "MSE": 0.0019296089885756373,
+          "pixels": 31500
+        },
+        "solver_history": [
+          {
+            "iteration": 1,
+            "relative_change": 0.01520308629249179,
+            "residual_RMSE": 0.04875544086098671
+          },
+          {
+            "iteration": 20,
+            "relative_change": 0.00732156908945518,
+            "residual_RMSE": 0.014372249133884907
+          },
+          {
+            "iteration": 40,
+            "relative_change": 0.004388463567836697,
+            "residual_RMSE": 0.006805676966905594
+          },
+          {
+            "iteration": 80,
+            "relative_change": 0.00242104167148752,
+            "residual_RMSE": 0.003029142739251256
+          },
+          {
+            "iteration": 100,
+            "relative_change": 0.001916074911185523,
+            "residual_RMSE": 0.00220873742364347
+          }
+        ],
+        "interpretation": "Synthetic validation checks implementation consistency only; it is not experimental evidence for the apparatus."
+      }
+    },
+    {
+      "check": "Compatible install replay",
+      "passed": true,
+      "detail": {
+        "opencv": "4.10.0",
+        "numpy": "1.26.4",
+        "tested_motion_attempts": 16,
+        "max_mapping_difference": 1.5757407716421312e-06,
+        "max_registered_reference_difference": 0.017753660678863525,
+        "max_evaluated_warp_difference": 0.024384543299674988,
+        "all_valid_masks_identical": false,
+        "frozen_cache_replay_max_PSNR_difference": 0.0031113116008860686,
+        "frozen_cache_replay_max_SSIM_difference": 8.493661880493164e-05,
+        "scope": "All16 primary inversions replayed under4.10 using delivered frozen geometry/masks. Separately recomputed endpoint registrations can differ at subpixel/border rounding and do not replace the delivered geometry or scores."
+      }
+    },
+    {
+      "check": "Sensitivity accounting",
+      "passed": true,
+      "detail": {
+        "one_factor_settings": 13,
+        "independent_coded_pushes_per_setting": 6
+      }
+    },
+    {
+      "check": "Report PDF",
+      "passed": true,
+      "detail": {
+        "pages": 9,
+        "visual_QA": "The eight-page analysis was inspected; the updated interpretation page and new photographic appendix were rendered and inspected after the documentation update."
+      }
+    }
+  ],
+  "remaining_author_documentation": [
+    "Display model/brightness/refresh setting",
+    "Ruler-zero relationship to sensor optical face and22mm measurement reference",
+    "Final report author contributions and course disclosure requirements"
+  ]
+}

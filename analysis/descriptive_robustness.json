@@ -1,0 +1,9 @@
+{
+  "n_independent_coded_pushes": 6,
+  "mean_gain_dB": 3.0384941271029384,
+  "sample_SD_gain_dB": 3.6664042858488965,
+  "median_gain_dB": 2.706133631699389,
+  "leave_one_out_mean_min_dB": 1.8702794598434491,
+  "leave_one_out_mean_max_dB": 3.869114742005922,
+  "interpretation": "Descriptive influence check. All six trials remain in the primary result; no significance claim."
+}

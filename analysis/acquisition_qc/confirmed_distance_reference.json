@@ -1,0 +1,33 @@
+{
+  "user_confirmed": "65 cm and 75 cm labels refer to base leading edge; paper is 22 mm farther away.",
+  "formula": "paper_reference_mm = base_edge_ruler_mm + 22",
+  "ruler_zero_alignment_to_lidar_optical_plane": "not independently verified; record setup photo and physical offset before calling residual a sensor-only bias",
+  "calibration_next": [
+    {
+      "base_edge_cm": 65,
+      "paper_reference_cm": 67.2
+    },
+    {
+      "base_edge_cm": 70,
+      "paper_reference_cm": 72.2
+    },
+    {
+      "base_edge_cm": 75,
+      "paper_reference_cm": 77.2
+    }
+  ],
+  "narrow_range_status": "candidate manual motion range: base edge 75 to 65 cm, corresponding paper reference 77.2 to 67.2 cm; residual defocus remains",
+  "static75_quality": {
+    "run": "motion_20260826_003107",
+    "retain_frames": [
+      1,
+      33
+    ],
+    "exclude_from_constant_white_reference": [
+      34,
+      35,
+      36
+    ],
+    "reason": "RAW p95 drops from approximately 0.131-0.132 to 0.063 then 0.039 while exposure is unchanged. Cause not independently verified."
+  }
+}

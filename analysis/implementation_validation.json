@@ -1,0 +1,45 @@
+{
+  "identity_error": 3.5762786865234375e-07,
+  "row_sum_error": 2.384185791015625e-07,
+  "adjoint_relative_error": 7.038834894507809e-07,
+  "synthetic_input": {
+    "PSNR_dB": 13.986634458053555,
+    "SSIM": 0.5411707162857056,
+    "MSE": 0.039933424443006516,
+    "pixels": 31500
+  },
+  "synthetic_reconstruction": {
+    "PSNR_dB": 27.145306864886848,
+    "SSIM": 0.9731442928314209,
+    "MSE": 0.0019296089885756373,
+    "pixels": 31500
+  },
+  "solver_history": [
+    {
+      "iteration": 1,
+      "relative_change": 0.01520308629249179,
+      "residual_RMSE": 0.04875544086098671
+    },
+    {
+      "iteration": 20,
+      "relative_change": 0.00732156908945518,
+      "residual_RMSE": 0.014372249133884907
+    },
+    {
+      "iteration": 40,
+      "relative_change": 0.004388463567836697,
+      "residual_RMSE": 0.006805676966905594
+    },
+    {
+      "iteration": 80,
+      "relative_change": 0.00242104167148752,
+      "residual_RMSE": 0.003029142739251256
+    },
+    {
+      "iteration": 100,
+      "relative_change": 0.001916074911185523,
+      "residual_RMSE": 0.00220873742364347
+    }
+  ],
+  "interpretation": "Synthetic validation checks implementation consistency only; it is not experimental evidence for the apparatus."
+}

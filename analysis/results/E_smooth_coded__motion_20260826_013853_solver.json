@@ -1,0 +1,104 @@
+{
+  "convergence": {
+    "constant": [
+      {
+        "iteration": 1,
+        "relative_change": 0.0053131177120256945,
+        "residual_RMSE": 0.1837964802980423
+      },
+      {
+        "iteration": 20,
+        "relative_change": 0.010217236114665972,
+        "residual_RMSE": 0.07796964049339294
+      },
+      {
+        "iteration": 40,
+        "relative_change": 0.00341415187891965,
+        "residual_RMSE": 0.030550038442015648
+      },
+      {
+        "iteration": 80,
+        "relative_change": 0.0013510763069567785,
+        "residual_RMSE": 0.022074691951274872
+      },
+      {
+        "iteration": 320,
+        "relative_change": 0.00010269479552552526,
+        "residual_RMSE": 0.020043455064296722
+      }
+    ],
+    "lidar": [
+      {
+        "iteration": 1,
+        "relative_change": 0.004983092588071651,
+        "residual_RMSE": 0.19689908623695374
+      },
+      {
+        "iteration": 20,
+        "relative_change": 0.010051685632479882,
+        "residual_RMSE": 0.09750176966190338
+      },
+      {
+        "iteration": 40,
+        "relative_change": 0.004539757673584294,
+        "residual_RMSE": 0.03698112443089485
+      },
+      {
+        "iteration": 80,
+        "relative_change": 0.0013973655508032162,
+        "residual_RMSE": 0.026788387447595596
+      },
+      {
+        "iteration": 320,
+        "relative_change": 0.00013292196717960673,
+        "residual_RMSE": 0.023788271471858025
+      }
+    ]
+  },
+  "shared_normalization": {
+    "input_low": 0.08565044403076172,
+    "input_high": 0.8098621964454651
+  },
+  "geometry": {
+    "inliers": 61,
+    "matches": 82,
+    "median_inlier_error_px": 0.2562634651461347,
+    "scale": 1.1563923842109067,
+    "rotation_deg": -0.15451086029795194,
+    "ze": 766.25,
+    "zl": 664.0,
+    "pivot": [
+      92.15708533017842,
+      147.59812812379855
+    ],
+    "early_frame": 2,
+    "late_frame": 11,
+    "expected_pinhole_scale": 1.1539909638554218,
+    "reference_registration": {
+      "inliers": 74,
+      "matches": 104,
+      "median_inlier_error_px": 0.202987270150478,
+      "scale": 0.9289833159886868,
+      "rotation_deg": -0.6566830732944706
+    },
+    "reference_to_reconstruction": [
+      [
+        0.9988638665206194,
+        0.012794995938434065,
+        8.692833803890961
+      ],
+      [
+        -0.012794995938434065,
+        0.9988638665206194,
+        13.331927907640246
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "zref": 711.5
+  },
+  "boundary": "Reference-assisted endpoint registration; numerical convergence is not physical model validation. First-row exposure convention; row timing unmeasured."
+}
