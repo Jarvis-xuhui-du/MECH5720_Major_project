@@ -1,0 +1,33 @@
+% Course report using the unchanged ICCP 2026 IEEEtran class and 10pt setting.
+% Updated from the 31 October supplementary physical experiment, not pooled
+% with the prior five-trial exploratory dataset. No conference submission.
+\documentclass[10pt,journal,compsoc]{IEEEtran}
+\newif\ifpeerreview\peerreviewfalse
+\usepackage[nocompress]{cite}
+\usepackage{url}
+\usepackage{amsmath,amssymb,graphicx}
+\usepackage{needspace}
+\title{LiDAR-Guided Reconstruction of Axial Motion Blur with Coded Monitor Illumination}
+\author{Jarvis Du, Qi Wang, Sai S. Vissavajjhala, and Marco Pham%
+\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem MECH5720 Major Project 2026, School of Aerospace, Mechanical and Mechatronic Engineering, The University of Sydney.}}
+\begin{document}
+\IEEEtitleabstractindextext{%
+\begin{abstract}
+We built a camera system to study blur as a printed target moves toward the camera during one exposure. A fixed depth sensor records the hand push, and a monitor changes the illumination. Twelve independent pushes cover steady and coded light under two motion instructions. Our main comparison uses six coded exposures and changes only the depth history assumed in reconstruction. Measured depth improves peak signal-to-noise ratio by a mean of 3.04 decibels over a straight-line depth estimate, with a sample standard deviation of 3.67 decibels. Five of six trials improve, and the mean structural-similarity gain is 0.084. Five trials also beat the blurred input, with a different trial failing that comparison. Stationary controls, timing fits and sensitivity checks support a conditional benefit from measured motion. The experiment uses reference-assisted reconstruction, with optical timing, target pose and focus still limiting recovery.
+\end{abstract}
+\begin{IEEEkeywords}
+Axial motion, LiDAR, coded illumination, image reconstruction, experimental characterization.
+\end{IEEEkeywords}}
+\maketitle
+\raggedbottom
+\input{sections/01_introduction}
+\input{sections/02_literature_review}
+\input{sections/03_apparatus_and_capture}
+\input{sections/04_timing_and_calibration}
+\input{sections/05_reconstruction}
+\input{sections/06_results}
+\input{sections/07_limitations}
+\input{sections/08_conclusion}
+\input{sections/09_reproducibility}
+\input{sections/10_references}
+\end{document}

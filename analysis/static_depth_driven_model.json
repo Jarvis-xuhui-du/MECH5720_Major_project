@@ -1,0 +1,14 @@
+{
+  "geometry": {
+    "ze": 766.5,
+    "zl": 663.125,
+    "scale": 1.159341706547313,
+    "rotation_deg": 0.0,
+    "pivot": [
+      93.06015083785533,
+      146.47422345936343
+    ]
+  },
+  "source": "Median of endpoint-calibrated motion geometry, not fitted to static reconstruction scores.",
+  "interpretation": "Stationary targets processed with their measured small depth fluctuations; shared static reference and canonical mask. This is a practical no-motion pipeline control, not proof of exact optical synchronization."
+}

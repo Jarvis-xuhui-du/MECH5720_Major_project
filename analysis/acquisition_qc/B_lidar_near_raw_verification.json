@@ -1,0 +1,96 @@
+{
+  "verification": "All ten raw CSV grids contain 64 cells per frame; recomputed positive central-4-zone medians after first frame match JSON and terminal summaries.",
+  "records": [
+    {
+      "source": "lidar_67p2cm_20260826_004018_327957.json",
+      "paper_reference_mm": 672.0,
+      "lidar_mm": 766.0,
+      "stable_frames": 26,
+      "ROI_valid_zone_count_min": 4,
+      "residual_mm": 94.0,
+      "include_pending_reference_check": false
+    },
+    {
+      "source": "lidar_67p2cm_20260826_004244_046861.json",
+      "paper_reference_mm": 672.0,
+      "lidar_mm": 665.0,
+      "stable_frames": 29,
+      "ROI_valid_zone_count_min": 4,
+      "residual_mm": -7.0,
+      "include_pending_reference_check": true
+    },
+    {
+      "source": "lidar_67p2cm_20260826_004257_687064.json",
+      "paper_reference_mm": 672.0,
+      "lidar_mm": 664.25,
+      "stable_frames": 22,
+      "ROI_valid_zone_count_min": 4,
+      "residual_mm": -7.75,
+      "include_pending_reference_check": true
+    },
+    {
+      "source": "lidar_67p2cm_20260826_004314_199390.json",
+      "paper_reference_mm": 672.0,
+      "lidar_mm": 664.5,
+      "stable_frames": 27,
+      "ROI_valid_zone_count_min": 4,
+      "residual_mm": -7.5,
+      "include_pending_reference_check": true
+    },
+    {
+      "source": "lidar_72p2cm_20260826_004143_416470.json",
+      "paper_reference_mm": 722.0,
+      "lidar_mm": 715.5,
+      "stable_frames": 25,
+      "ROI_valid_zone_count_min": 4,
+      "residual_mm": -6.5,
+      "include_pending_reference_check": true
+    },
+    {
+      "source": "lidar_72p2cm_20260826_004218_546168.json",
+      "paper_reference_mm": 722.0,
+      "lidar_mm": 715.5,
+      "stable_frames": 23,
+      "ROI_valid_zone_count_min": 4,
+      "residual_mm": -6.5,
+      "include_pending_reference_check": true
+    },
+    {
+      "source": "lidar_72p2cm_20260826_004227_072781.json",
+      "paper_reference_mm": 722.0,
+      "lidar_mm": 715.0,
+      "stable_frames": 28,
+      "ROI_valid_zone_count_min": 4,
+      "residual_mm": -7.0,
+      "include_pending_reference_check": true
+    },
+    {
+      "source": "lidar_77p2cm_20260826_004044_283592.json",
+      "paper_reference_mm": 772.0,
+      "lidar_mm": 766.0,
+      "stable_frames": 26,
+      "ROI_valid_zone_count_min": 4,
+      "residual_mm": -6.0,
+      "include_pending_reference_check": true
+    },
+    {
+      "source": "lidar_77p2cm_20260826_004103_410222.json",
+      "paper_reference_mm": 772.0,
+      "lidar_mm": 766.5,
+      "stable_frames": 25,
+      "ROI_valid_zone_count_min": 4,
+      "residual_mm": -5.5,
+      "include_pending_reference_check": true
+    },
+    {
+      "source": "lidar_77p2cm_20260826_004115_470515.json",
+      "paper_reference_mm": 772.0,
+      "lidar_mm": 767.0,
+      "stable_frames": 24,
+      "ROI_valid_zone_count_min": 4,
+      "residual_mm": -5.0,
+      "include_pending_reference_check": true
+    }
+  ],
+  "geometry_note": "JSON measured_from text is a script default, not independent evidence of sensor-face ruler zero. Keep user-confirmed base-front +22 mm convention and verify ruler zero separately."
+}

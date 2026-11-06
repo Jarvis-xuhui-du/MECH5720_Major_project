@@ -1,0 +1,40 @@
+{
+  "basis": "Recomputed and verified against all ten local full 8x8 CSVs and JSONs; per-run central 4-zone medians agree.",
+  "position_summaries": [
+    {
+      "paper_reference_mm": 672.0,
+      "n_runs": 3,
+      "lidar_mean_mm": 664.5833333333334,
+      "sample_SD_across_run_summaries_mm": 0.3818813079129867,
+      "mean_residual_mm": -7.416666666666629
+    },
+    {
+      "paper_reference_mm": 722.0,
+      "n_runs": 3,
+      "lidar_mean_mm": 715.3333333333334,
+      "sample_SD_across_run_summaries_mm": 0.28867513459481287,
+      "mean_residual_mm": -6.666666666666629
+    },
+    {
+      "paper_reference_mm": 772.0,
+      "n_runs": 3,
+      "lidar_mean_mm": 766.5,
+      "sample_SD_across_run_summaries_mm": 0.5,
+      "mean_residual_mm": -5.5
+    }
+  ],
+  "excluded_record": {
+    "paper_reference_mm": 672.0,
+    "lidar_mm": 766.0,
+    "residual_mm": 94.0,
+    "stable_frames_reported": 26,
+    "min_mm": 765.0,
+    "max_mm": 767.0,
+    "source_stem": "/home/pi/tmf8829_driver_linux_userspace/supplement_20261031/B_lidar_near/lidar_67p2cm_20260826_004018_327957",
+    "use_in_three_position_summary": false,
+    "exclusion_reason": "reference/position mismatch; requires user confirmation"
+  },
+  "distance_convention": "paper reference = base-edge ruler reading + 22 mm",
+  "ruler_zero_to_sensor_optical_plane": "not verified; residual must not yet be attributed solely to LiDAR bias",
+  "reposition_between_runs": "requested in protocol, not independently verified"
+}

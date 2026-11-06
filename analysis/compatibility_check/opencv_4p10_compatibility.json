@@ -1,0 +1,12 @@
+{
+  "opencv": "4.10.0",
+  "numpy": "1.26.4",
+  "tested_motion_attempts": 16,
+  "max_mapping_difference": 1.5757407716421312e-06,
+  "max_registered_reference_difference": 0.017753660678863525,
+  "max_evaluated_warp_difference": 0.024384543299674988,
+  "all_valid_masks_identical": false,
+  "frozen_cache_replay_max_PSNR_difference": 0.0031113116008860686,
+  "frozen_cache_replay_max_SSIM_difference": 8.493661880493164e-05,
+  "scope": "All16 primary inversions replayed under4.10 using delivered frozen geometry/masks. Separately recomputed endpoint registrations can differ at subpixel/border rounding and do not replace the delivered geometry or scores."
+}

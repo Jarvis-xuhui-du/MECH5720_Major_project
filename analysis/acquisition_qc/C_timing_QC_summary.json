@@ -1,0 +1,180 @@
+{
+  "ROI_xyxy": [
+    230,
+    45,
+    550,
+    95
+  ],
+  "independent_timing_runs": 3,
+  "runs": [
+    {
+      "run": "motion_20260826_004919",
+      "readable_DNGs": 151,
+      "events": 60,
+      "sequence_complete_0_to_59": true,
+      "same_player_run_id": true,
+      "states": [
+        0,
+        1
+      ],
+      "actual_exposure_us": [
+        19969
+      ],
+      "median_saved_frame_interval_ms": 129.5819999999992,
+      "event_span_s": 11.802912548,
+      "median_event_interval_ms": 200.99926999999963,
+      "event_interval_range_ms": [
+        186.1700000000006,
+        209.85119799999998
+      ],
+      "max_paper_saturation_percent": 0.0,
+      "receive_minus_sensor_ms_min_median_max": [
+        51.779601,
+        52.61661,
+        69.177301
+      ],
+      "failures": [],
+      "conditional_optical_alignment": {
+        "timestamp_as_exposure_end": {
+          "effective_offset_ms": 30.000000000000306,
+          "R_squared": 0.9854611803176164,
+          "n_camera_observations_fit": 86,
+          "fitted_black_level_fraction_fullscale": 0.002109094815206668,
+          "fitted_white_level_fraction_fullscale": 0.018083983120944794,
+          "fitted_black_white_ratio": 0.1166277805669882,
+          "R2_within_0p01_of_peak_offset_interval_ms": [
+            26.000000000000302,
+            33.000000000000306
+          ],
+          "note": "Fit plateau is not a confidence interval. Grid step is not timing accuracy. Offset includes timestamp convention, readout, display, UDP and other delays."
+        },
+        "timestamp_as_exposure_start": {
+          "effective_offset_ms": 50.00000000000032,
+          "R_squared": 0.9854523786325248,
+          "n_camera_observations_fit": 86,
+          "fitted_black_level_fraction_fullscale": 0.0021097148861669393,
+          "fitted_white_level_fraction_fullscale": 0.018084035986495734,
+          "fitted_black_white_ratio": 0.11666172793188259,
+          "R2_within_0p01_of_peak_offset_interval_ms": [
+            46.00000000000032,
+            53.00000000000033
+          ],
+          "note": "Fit plateau is not a confidence interval. Grid step is not timing accuracy. Offset includes timestamp convention, readout, display, UDP and other delays."
+        }
+      }
+    },
+    {
+      "run": "motion_20260826_004959",
+      "readable_DNGs": 151,
+      "events": 60,
+      "sequence_complete_0_to_59": true,
+      "same_player_run_id": true,
+      "states": [
+        0,
+        1
+      ],
+      "actual_exposure_us": [
+        19969
+      ],
+      "median_saved_frame_interval_ms": 129.5819999999992,
+      "event_span_s": 11.809051246,
+      "median_event_interval_ms": 201.206145,
+      "event_interval_range_ms": [
+        186.35182300000076,
+        213.88802100000072
+      ],
+      "max_paper_saturation_percent": 0.0,
+      "receive_minus_sensor_ms_min_median_max": [
+        51.198605,
+        52.65839,
+        69.487621
+      ],
+      "failures": [],
+      "conditional_optical_alignment": {
+        "timestamp_as_exposure_end": {
+          "effective_offset_ms": 26.000000000000302,
+          "R_squared": 0.9524881300013713,
+          "n_camera_observations_fit": 87,
+          "fitted_black_level_fraction_fullscale": 0.0023207641101045478,
+          "fitted_white_level_fraction_fullscale": 0.018007284751989438,
+          "fitted_black_white_ratio": 0.12887918095748171,
+          "R2_within_0p01_of_peak_offset_interval_ms": [
+            21.000000000000295,
+            31.000000000000306
+          ],
+          "note": "Fit plateau is not a confidence interval. Grid step is not timing accuracy. Offset includes timestamp convention, readout, display, UDP and other delays."
+        },
+        "timestamp_as_exposure_start": {
+          "effective_offset_ms": 45.00000000000032,
+          "R_squared": 0.9520843670099164,
+          "n_camera_observations_fit": 86,
+          "fitted_black_level_fraction_fullscale": 0.00232670484919254,
+          "fitted_white_level_fraction_fullscale": 0.01801546849094913,
+          "fitted_black_white_ratio": 0.12915039374976361,
+          "R2_within_0p01_of_peak_offset_interval_ms": [
+            41.00000000000031,
+            51.00000000000032
+          ],
+          "note": "Fit plateau is not a confidence interval. Grid step is not timing accuracy. Offset includes timestamp convention, readout, display, UDP and other delays."
+        }
+      }
+    },
+    {
+      "run": "motion_20260826_005038",
+      "readable_DNGs": 152,
+      "events": 60,
+      "sequence_complete_0_to_59": true,
+      "same_player_run_id": true,
+      "states": [
+        0,
+        1
+      ],
+      "actual_exposure_us": [
+        19969
+      ],
+      "median_saved_frame_interval_ms": 129.5819999999992,
+      "event_span_s": 11.814468798,
+      "median_event_interval_ms": 200.77651099999994,
+      "event_interval_range_ms": [
+        185.88083300000014,
+        204.908229
+      ],
+      "max_paper_saturation_percent": 0.0,
+      "receive_minus_sensor_ms_min_median_max": [
+        51.722304,
+        52.65733,
+        69.37247
+      ],
+      "failures": [],
+      "conditional_optical_alignment": {
+        "timestamp_as_exposure_end": {
+          "effective_offset_ms": 23.0000000000003,
+          "R_squared": 0.9704581375785212,
+          "n_camera_observations_fit": 86,
+          "fitted_black_level_fraction_fullscale": 0.0022687324368433075,
+          "fitted_white_level_fraction_fullscale": 0.01805094441081724,
+          "fitted_black_white_ratio": 0.12568497166739614,
+          "R2_within_0p01_of_peak_offset_interval_ms": [
+            20.000000000000295,
+            28.000000000000302
+          ],
+          "note": "Fit plateau is not a confidence interval. Grid step is not timing accuracy. Offset includes timestamp convention, readout, display, UDP and other delays."
+        },
+        "timestamp_as_exposure_start": {
+          "effective_offset_ms": 43.00000000000031,
+          "R_squared": 0.9704769220715453,
+          "n_camera_observations_fit": 86,
+          "fitted_black_level_fraction_fullscale": 0.0022685667143539593,
+          "fitted_white_level_fraction_fullscale": 0.018051066310284164,
+          "fitted_black_white_ratio": 0.12567494215350025,
+          "R2_within_0p01_of_peak_offset_interval_ms": [
+            40.00000000000031,
+            48.00000000000032
+          ],
+          "note": "Fit plateau is not a confidence interval. Grid step is not timing accuracy. Offset includes timestamp convention, readout, display, UDP and other delays."
+        }
+      }
+    }
+  ],
+  "interpretation_boundary": "Three short-exposure runs verify observable modulation and repeatability of a conditional camera/UDP alignment model. They do not independently establish camera exposure start/end semantics or precise screen optical delay; sampling is sparse relative to 200ms bits. Fit uses a fixed paper patch and integrates announced states over each assumed exposure interval."
+}

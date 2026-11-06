@@ -1,0 +1,15 @@
+{
+  "python": "3.12.7",
+  "analysis_runtime": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "pandas": "2.2.2",
+    "opencv-python": "5.0.0.93",
+    "rawpy": "0.27.0",
+    "scikit-image": "0.24.0",
+    "matplotlib": "3.9.2"
+  },
+  "pdf_runtime": "Bundled Python with ReportLab4.4.9",
+  "installation_recipe": "requirements.txt uses NumPy1.26.4 and OpenCV4.10.0.84; isolated replay check is in compatibility_check/",
+  "note": "The original analysis imports OpenCV5.0 with NumPy1.26.4 successfully, although the installed OpenCV5.0 package declares NumPy>=2. The compatible install recipe is distinct from that actual environment. Do not claim bit-identical full registration across versions."
+}

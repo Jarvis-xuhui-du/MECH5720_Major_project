@@ -1,0 +1,87 @@
+{
+  "paper_roi_xyxy": [
+    230,
+    45,
+    550,
+    95
+  ],
+  "per_condition": {
+    "A_black70_1s": {
+      "run": "motion_20260825_233045",
+      "camera_frames": 6,
+      "lidar_frames": 97,
+      "failures": [],
+      "actual_exposure_us": [
+        999942
+      ],
+      "paper_mean_fraction_fullscale": 0.900807627855015,
+      "paper_mean_min_max": [
+        0.9001856380337638,
+        0.901361780039722
+      ],
+      "paper_frame_mean_CV_percent": 0.055793997434795954,
+      "max_frame_saturated_percent": 0.0,
+      "max_paper_saturated_percent": 0.0,
+      "raw_max_all_frames": 990.0,
+      "lidar_roi_median_mm": 712.5,
+      "lidar_roi_min_max_mm": [
+        371.0,
+        716.0
+      ]
+    },
+    "A_dark_1s": {
+      "run": "motion_20260825_233150",
+      "camera_frames": 6,
+      "lidar_frames": 96,
+      "failures": [],
+      "actual_exposure_us": [
+        999942
+      ],
+      "paper_mean_fraction_fullscale": 0.022047811155246608,
+      "paper_mean_min_max": [
+        0.022008254716981132,
+        0.02209893247269116
+      ],
+      "paper_frame_mean_CV_percent": 0.17242645629938216,
+      "max_frame_saturated_percent": 0.0,
+      "max_paper_saturated_percent": 0.0,
+      "raw_max_all_frames": 87.0,
+      "lidar_roi_median_mm": 712.5,
+      "lidar_roi_min_max_mm": [
+        393.0,
+        716.5
+      ]
+    },
+    "A_white70_1s": {
+      "run": "motion_20260825_232720",
+      "camera_frames": 7,
+      "lidar_frames": 103,
+      "failures": [],
+      "actual_exposure_us": [
+        999942
+      ],
+      "paper_mean_fraction_fullscale": 0.9335251808767199,
+      "paper_mean_min_max": [
+        0.9328000248262165,
+        0.934288480635551
+      ],
+      "paper_frame_mean_CV_percent": 0.05733577566449108,
+      "max_frame_saturated_percent": 0.00032552083333333337,
+      "max_paper_saturated_percent": 0.0,
+      "raw_max_all_frames": 1023.0,
+      "lidar_roi_median_mm": 712.5,
+      "lidar_roi_min_max_mm": [
+        705.0,
+        717.0
+      ]
+    }
+  },
+  "dark_corrected_paper": {
+    "A_white70_1s": 0.9114861726840688,
+    "A_black70_1s": 0.8787686196623634
+  },
+  "black_over_white_ratio": 0.9641052667586152,
+  "white_minus_black_over_white_percent": 3.5894733241384773,
+  "white_over_black_ratio": 1.0372311348967787,
+  "interpretation": "Little temporal contrast in this observed paper ROI; identify ambient illumination and verify full-screen black before moving captures. No RAW clipping observed does not establish useful coding contrast. Gain was requested as 1, not independently measured by this CSV."
+}

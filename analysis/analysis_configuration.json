@@ -1,0 +1,27 @@
+{
+  "python": "3.12.7",
+  "numpy": "1.26.4",
+  "scipy": "1.13.1",
+  "opencv": "5.0.0",
+  "rawpy": "0.27.0",
+  "skimage": "0.24.0",
+  "resolution": [
+    240,
+    180
+  ],
+  "reference_depth_raw_lidar_mm": 711.5,
+  "primary_tv_lambda": 0.002,
+  "primary_iterations": 320,
+  "quadrature_bins": 48,
+  "primary_event_effective_lag_s": 0.026,
+  "primary_light_floor": 0.19,
+  "primary_depth_offset_mm": 0,
+  "reference_used_for_evaluation_registration_and_shared_photometric_transfer": true,
+  "selection": "Exploratory trajectory-only QC frozen before supplement scoring: covered approach>=15mm. Variable ranked by departure from endpoint-linear depth; smooth by displacement. Weak originals and pilots still scored separately.",
+  "timestamp": "SensorTimestamp minus exposure for first-row exposure start; rolling-shutter row skew unmeasured. Pi implementation supported by official Picamera2 discussion; alignment sensitivity remains required.",
+  "timing_source": "https://github.com/raspberrypi/picamera2/issues/821",
+  "raw": "Two green sensels averaged per2x2 Bayer cell; black-level/white-level normalized; resized240x180; no JPEG, gamma, AWB, or demosaicing",
+  "evaluation": "Inverse-warp all methods to one fixed sharp-reference coordinate frame; intersect geometric support over all16 attempts before scoring. Primary identical canonical mask; native-coordinate scores secondary.",
+  "iteration_revision": "Initial80-iteration pilot retained separately; increase to320 based on >1e-3 iterate changes, then check640. This is a numerical stopping-budget change, not a per-trial score optimization.",
+  "non_preregistered": true
+}

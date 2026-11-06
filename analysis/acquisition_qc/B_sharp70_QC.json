@@ -1,0 +1,26 @@
+{
+  "run": "MECH5720_Lab\\mech5720\\code\\supplement_20261031\\B_sharp70\\motion_20260826_001233",
+  "camera_frames": 36,
+  "DNG_files": 36,
+  "readable_DNG": 36,
+  "failures": [],
+  "actual_exposure_us": [
+    99976
+  ],
+  "paper_mean_fraction_fullscale_mean": 0.10007921459505684,
+  "paper_mean_min_max": [
+    0.09991254965243297,
+    0.10020767130089374
+  ],
+  "paper_mean_cv_percent": 0.06987630302039996,
+  "paper_p99_max": 0.1211519364448858,
+  "max_frame_saturation_percent": 0.0,
+  "lidar_frames": 99,
+  "lidar_median_after_first_mm": 711.5,
+  "lidar_range_after_first_mm": [
+    708.5,
+    716.0
+  ],
+  "preview_display_multiplier": 6.769747899159664,
+  "preview_note": "Only displayed preview brightness adjusted; source DNG unchanged. Paper ROI x230:550,y45:95."
+}

@@ -1,0 +1,8 @@
+{
+  "scored_pixels": 28327,
+  "total_pixels": 43200,
+  "fraction": 0.6557175925925925,
+  "width": 240,
+  "height": 180,
+  "source": "cache/canonical_evaluation.npz:full_mask"
+}

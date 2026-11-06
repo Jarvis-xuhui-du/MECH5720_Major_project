@@ -1,0 +1,191 @@
+[
+  {
+    "run": "motion_20260826_011326",
+    "camera_frames": 11,
+    "DNG_files": 11,
+    "readable_DNGs": 11,
+    "actual_exposure_us": [
+      999942
+    ],
+    "events": 60,
+    "events_sequence_complete": true,
+    "max_RAW_saturation_percent": 0.0,
+    "failures": [],
+    "conditional_models": {
+      "end": {
+        "fixed_effective_offset_ms": 26.0,
+        "fully_covered_frames": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "covered_n": 6,
+        "linear_fit_R_squared": 0.8140467740433928,
+        "fitted_black_level": 0.3174661788455543,
+        "fitted_white_minus_black": 0.6244854914146051,
+        "positive_illumination_response": true,
+        "paper_RMSE_fullscale": 0.021779300812671067,
+        "note": "Lag fixed from earlier short-exposure controls, not optimized on these long-exposure images. A strong negative slope is incompatible with white being brighter than black."
+      },
+      "start": {
+        "fixed_effective_offset_ms": 45.0,
+        "fully_covered_frames": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "covered_n": 5,
+        "linear_fit_R_squared": 0.5783070006760204,
+        "fitted_black_level": 0.9268135656790805,
+        "fitted_white_minus_black": -0.40287373817348116,
+        "positive_illumination_response": false,
+        "paper_RMSE_fullscale": 0.02189085828407332,
+        "note": "Lag fixed from earlier short-exposure controls, not optimized on these long-exposure images. A strong negative slope is incompatible with white being brighter than black."
+      },
+      "long_only_exploratory_end_stamp_fit": {
+        "offset_ms": -11.999999999999789,
+        "R_squared": 0.9992246923925182,
+        "fitted_black_level": 0.20494298950562864,
+        "fitted_white_minus_black": 0.8333197373241188,
+        "n": 6,
+        "note": "Fit on the same small long-exposure control set, not independent validation. Different offsets from short-exposure controls require configuration-dependent timing treatment and sensitivity analysis."
+      }
+    },
+    "within_run_normalized_image_RMS_min_max": [
+      0.009636371430308209,
+      0.022682236481254583
+    ],
+    "preview_frame": 6
+  },
+  {
+    "run": "motion_20260826_011415",
+    "camera_frames": 12,
+    "DNG_files": 12,
+    "readable_DNGs": 12,
+    "actual_exposure_us": [
+      999942
+    ],
+    "events": 60,
+    "events_sequence_complete": true,
+    "max_RAW_saturation_percent": 0.0,
+    "failures": [],
+    "conditional_models": {
+      "end": {
+        "fixed_effective_offset_ms": 26.0,
+        "fully_covered_frames": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "covered_n": 6,
+        "linear_fit_R_squared": 0.6065983286753476,
+        "fitted_black_level": 0.3152828798501624,
+        "fitted_white_minus_black": 0.6235837956106502,
+        "positive_illumination_response": true,
+        "paper_RMSE_fullscale": 0.027816936872573274,
+        "note": "Lag fixed from earlier short-exposure controls, not optimized on these long-exposure images. A strong negative slope is incompatible with white being brighter than black."
+      },
+      "start": {
+        "fixed_effective_offset_ms": 45.0,
+        "fully_covered_frames": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "covered_n": 5,
+        "linear_fit_R_squared": 0.4570823710625085,
+        "fitted_black_level": 1.1304755136472209,
+        "fitted_white_minus_black": -0.7388977243539262,
+        "positive_illumination_response": false,
+        "paper_RMSE_fullscale": 0.03548293501456732,
+        "note": "Lag fixed from earlier short-exposure controls, not optimized on these long-exposure images. A strong negative slope is incompatible with white being brighter than black."
+      },
+      "long_only_exploratory_end_stamp_fit": {
+        "offset_ms": -18.999999999999794,
+        "R_squared": 0.9529800128943744,
+        "fitted_black_level": 0.29099412351594073,
+        "fitted_white_minus_black": 0.6863518400949233,
+        "n": 6,
+        "note": "Fit on the same small long-exposure control set, not independent validation. Different offsets from short-exposure controls require configuration-dependent timing treatment and sensitivity analysis."
+      }
+    },
+    "within_run_normalized_image_RMS_min_max": [
+      0.009047125985228593,
+      0.016244823007616063
+    ],
+    "preview_frame": 6
+  },
+  {
+    "run": "motion_20260826_011453",
+    "camera_frames": 12,
+    "DNG_files": 12,
+    "readable_DNGs": 12,
+    "actual_exposure_us": [
+      999942
+    ],
+    "events": 60,
+    "events_sequence_complete": true,
+    "max_RAW_saturation_percent": 0.0,
+    "failures": [],
+    "conditional_models": {
+      "end": {
+        "fixed_effective_offset_ms": 26.0,
+        "fully_covered_frames": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "covered_n": 6,
+        "linear_fit_R_squared": 0.5251224695248757,
+        "fitted_black_level": 0.36567315284743246,
+        "fitted_white_minus_black": 0.5439853693982175,
+        "positive_illumination_response": true,
+        "paper_RMSE_fullscale": 0.029807227703949536,
+        "note": "Lag fixed from earlier short-exposure controls, not optimized on these long-exposure images. A strong negative slope is incompatible with white being brighter than black."
+      },
+      "start": {
+        "fixed_effective_offset_ms": 45.0,
+        "fully_covered_frames": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "covered_n": 5,
+        "linear_fit_R_squared": 7.341333932986416e-07,
+        "fitted_black_level": 0.6562978772450815,
+        "fitted_white_minus_black": -0.0005997545442530157,
+        "positive_illumination_response": false,
+        "paper_RMSE_fullscale": 0.036016919257899474,
+        "note": "Lag fixed from earlier short-exposure controls, not optimized on these long-exposure images. A strong negative slope is incompatible with white being brighter than black."
+      },
+      "long_only_exploratory_end_stamp_fit": {
+        "offset_ms": -18.999999999999794,
+        "R_squared": 0.99062280097544,
+        "fitted_black_level": 0.19425632053113068,
+        "fitted_white_minus_black": 0.8683884475352357,
+        "n": 6,
+        "note": "Fit on the same small long-exposure control set, not independent validation. Different offsets from short-exposure controls require configuration-dependent timing treatment and sensitivity analysis."
+      }
+    },
+    "within_run_normalized_image_RMS_min_max": [
+      0.010678210799204163,
+      0.02256236880940641
+    ],
+    "preview_frame": 6
+  }
+]

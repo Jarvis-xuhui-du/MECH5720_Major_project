@@ -1,0 +1,51 @@
+{
+  "paper_roi_xyxy": [
+    230,
+    45,
+    550,
+    95
+  ],
+  "conditions": {
+    "A2_black70_1s": {
+      "run": "motion_20260825_235319",
+      "camera_frames": 7,
+      "exposure_us": [
+        999942
+      ],
+      "readable_dngs": 7,
+      "paper_mean_blacklevel_corrected_fullscale": 0.14889979075046103,
+      "paper_frame_mean_cv_percent": 0.26363727885880806,
+      "max_frame_saturation_percent": 0.0,
+      "lidar_frames": 104,
+      "lidar_first_frame_mm": "573.5",
+      "lidar_median_after_first_frame_mm": 711.5,
+      "lidar_range_after_first_frame_mm": [
+        709.5,
+        715.5
+      ],
+      "failures": []
+    },
+    "A2_white70_1s": {
+      "run": "motion_20260825_235241",
+      "camera_frames": 7,
+      "exposure_us": [
+        999942
+      ],
+      "readable_dngs": 7,
+      "paper_mean_blacklevel_corrected_fullscale": 0.8925394116186693,
+      "paper_frame_mean_cv_percent": 0.018677213638543858,
+      "max_frame_saturation_percent": 0.0,
+      "lidar_frames": 102,
+      "lidar_first_frame_mm": "571.0",
+      "lidar_median_after_first_frame_mm": 712.0,
+      "lidar_range_after_first_frame_mm": [
+        710.5,
+        715.5
+      ],
+      "failures": []
+    }
+  },
+  "black_to_white_ratio_after_DNG_blacklevel_correction": 0.16682713257493365,
+  "white_minus_black_fraction_of_white": 0.8331728674250664,
+  "interpretation": "Illumination contrast improved; keep this setup. One startup transient LiDAR sample in each run must not be treated as stable target depth. Ratio uses DNG black-level correction, not a new dark-frame subtraction. No exact optical synchronization established."
+}

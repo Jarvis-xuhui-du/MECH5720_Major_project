@@ -1,0 +1,87 @@
+{
+  "raw_runs": 40,
+  "raw_DNGs": 1239,
+  "all_motion_attempts": 16,
+  "primary_independent_pushes": 12,
+  "primary_coded_pushes": 6,
+  "weak_attempts_retained": 2,
+  "pilots_retained": 2,
+  "coded_primary_paired_effects": {
+    "PSNR_dB_gain_lidar_vs_constant": {
+      "mean": 3.0384941271029384,
+      "sample_SD": 3.6664042858488965,
+      "min": -1.114608947411977,
+      "max": 8.879567463400388,
+      "positive_trials": 5,
+      "n": 6
+    },
+    "PSNR_dB_gain_lidar_vs_input": {
+      "mean": 3.5226200638105976,
+      "sample_SD": 5.420606590521534,
+      "min": -2.382645181235116,
+      "max": 13.494365798793883,
+      "positive_trials": 5,
+      "n": 6
+    },
+    "PSNR_dB_gain_lidar_vs_denoise_only": {
+      "mean": 3.5219179651293153,
+      "sample_SD": 5.4109707147768935,
+      "min": -2.357153780958445,
+      "max": 13.483916383666187,
+      "positive_trials": 5,
+      "n": 6
+    },
+    "SSIM_gain_lidar_vs_constant": {
+      "mean": 0.08426264921824138,
+      "sample_SD": 0.07966102799569319,
+      "min": -0.023918449878692627,
+      "max": 0.17906689643859863,
+      "positive_trials": 5,
+      "n": 6
+    },
+    "SSIM_gain_lidar_vs_input": {
+      "mean": 0.12804142634073892,
+      "sample_SD": 0.14852803417838464,
+      "min": -0.03804802894592285,
+      "max": 0.3829631805419922,
+      "positive_trials": 5,
+      "n": 6
+    },
+    "SSIM_gain_lidar_vs_denoise_only": {
+      "mean": 0.12465214729309082,
+      "sample_SD": 0.14727086329231734,
+      "min": -0.03885519504547119,
+      "max": 0.3777303695678711,
+      "positive_trials": 5,
+      "n": 6
+    }
+  },
+  "static_identity_control_lambda0_max_abs_error": 0.0,
+  "static_TV0p002_effect_vs_input": {
+    "PSNR_dB": {
+      "mean": 0.050989509442885605,
+      "min": 0.047007203775176976,
+      "max": 0.05613293162358346
+    },
+    "SSIM": {
+      "mean": 0.005144675572713216,
+      "min": 0.004783153533935547,
+      "max": 0.005388081073760986
+    }
+  },
+  "numerical_stability": [
+    {
+      "tag": "iterations640",
+      "max_abs_lidar_PSNR_change": 0.048955381745489746,
+      "mean_lidar_vs_constant_PSNR": 3.049184100722257
+    },
+    {
+      "tag": "quadrature96",
+      "max_abs_lidar_PSNR_change": 0.20706857297312453,
+      "mean_lidar_vs_constant_PSNR": 3.012597322422011
+    }
+  ],
+  "sensitivity_experiments": 13,
+  "inference": "Descriptive exploratory means and sample SD across independent hand pushes. No p-values or randomized/matched coded-versus-white causal claim. Per-frame samples are technical observations. Scores are reference-assisted and registration-sensitive.",
+  "no_motion_claim": "An identity forward model with zero regularization reproduces its input exactly. Static TV is checked separately; this does not validate all dynamic-model assumptions."
+}

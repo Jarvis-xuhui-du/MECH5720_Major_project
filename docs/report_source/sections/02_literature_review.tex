@@ -1,0 +1,4 @@
+\section{Literature Review}
+Raskar et al.\ used a fluttered shutter to encode motion during exposure and improve deblurring\cite{raskar}. We borrow the idea of temporal coding, apply it through illumination and model axial scaling. Our short binary pattern was not optimized. Their lateral-motion results motivate the experiment but do not establish that coding will help this apparatus.
+
+We use total variation (TV) regularization to limit noise while retaining edges\cite{rof}. The solver follows an accelerated proximal-gradient scheme inspired by FISTA\cite{fista}, with an approximate TV step whose numerical stability we check. Scale-invariant features support endpoint registration\cite{lowe}. We evaluate pixel error with peak signal-to-noise ratio (PSNR) and local structure with structural similarity (SSIM)\cite{ssim}. Including the blurred input as a baseline shows whether reconstruction improves the photograph as well as the assumed motion model.

@@ -1,0 +1,44 @@
+[
+  {
+    "run": "motion_20260826_011326",
+    "selected_frame": 6,
+    "registration_frame": 3,
+    "registration": {
+      "inliers": 126,
+      "matches": 148,
+      "median_inlier_error_px": 0.08719483408082554,
+      "scale": 0.9945656262206668,
+      "rotation_deg": -0.64998864030185
+    },
+    "depth_range_in_exposure_mm": 1.5,
+    "in_exposure_depth_samples": 11
+  },
+  {
+    "run": "motion_20260826_011415",
+    "selected_frame": 6,
+    "registration_frame": 3,
+    "registration": {
+      "inliers": 126,
+      "matches": 144,
+      "median_inlier_error_px": 0.09251441036870217,
+      "scale": 0.9947189800738874,
+      "rotation_deg": -0.6422151629605277
+    },
+    "depth_range_in_exposure_mm": 1.5,
+    "in_exposure_depth_samples": 11
+  },
+  {
+    "run": "motion_20260826_011453",
+    "selected_frame": 6,
+    "registration_frame": 3,
+    "registration": {
+      "inliers": 119,
+      "matches": 134,
+      "median_inlier_error_px": 0.08511438583119096,
+      "scale": 0.9945468526244959,
+      "rotation_deg": -0.6434397956294394
+    },
+    "depth_range_in_exposure_mm": 1.0,
+    "in_exposure_depth_samples": 11
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "matched_frames": [
+    2,
+    6
+  ],
+  "ratio_test_matches": 147,
+  "inliers": 102,
+  "similarity_affine": [
+    [
+      1.1730858051645512,
+      0.0026515920652389123,
+      -44.071154218956245
+    ],
+    [
+      -0.0026515920652389123,
+      1.1730858051645512,
+      -67.10829777034489
+    ]
+  ],
+  "scale": 1.1730888019323362,
+  "rotation_deg": -0.12950866417569237,
+  "note": "Endpoint similarity fit only; does not validate intermediate pose or pure axial motion."
+}

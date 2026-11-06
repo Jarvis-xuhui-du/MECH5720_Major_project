@@ -1,0 +1,11 @@
+﻿paper_reference_mm,lidar_mm,residual_mm,stable_frames_reported,min_mm,max_mm,source_stem,use_in_three_position_summary,exclusion_reason
+672.0,766.0,94.0,26,765.0,767.0,/home/pi/tmf8829_driver_linux_userspace/supplement_20261031/B_lidar_near/lidar_67p2cm_20260826_004018_327957,False,reference/position mismatch; requires user confirmation
+772.0,766.0,-6.0,26,765.5,767.0,/home/pi/tmf8829_driver_linux_userspace/supplement_20261031/B_lidar_near/lidar_77p2cm_20260826_004044_283592,True,
+772.0,766.5,-5.5,25,765.5,768.0,/home/pi/tmf8829_driver_linux_userspace/supplement_20261031/B_lidar_near/lidar_77p2cm_20260826_004103_410222,True,
+772.0,767.0,-5.0,24,765.5,768.0,/home/pi/tmf8829_driver_linux_userspace/supplement_20261031/B_lidar_near/lidar_77p2cm_20260826_004115_470515,True,
+722.0,715.5,-6.5,25,714.5,717.0,/home/pi/tmf8829_driver_linux_userspace/supplement_20261031/B_lidar_near/lidar_72p2cm_20260826_004143_416470,True,
+722.0,715.5,-6.5,23,714.0,716.5,/home/pi/tmf8829_driver_linux_userspace/supplement_20261031/B_lidar_near/lidar_72p2cm_20260826_004218_546168,True,
+722.0,715.0,-7.0,28,714.0,716.5,/home/pi/tmf8829_driver_linux_userspace/supplement_20261031/B_lidar_near/lidar_72p2cm_20260826_004227_072781,True,
+672.0,665.0,-7.0,29,664.0,667.0,/home/pi/tmf8829_driver_linux_userspace/supplement_20261031/B_lidar_near/lidar_67p2cm_20260826_004244_046861,True,
+672.0,664.25,-7.75,22,663.5,667.0,/home/pi/tmf8829_driver_linux_userspace/supplement_20261031/B_lidar_near/lidar_67p2cm_20260826_004257_687064,True,
+672.0,664.5,-7.5,27,664.0,667.0,/home/pi/tmf8829_driver_linux_userspace/supplement_20261031/B_lidar_near/lidar_67p2cm_20260826_004314_199390,True,
