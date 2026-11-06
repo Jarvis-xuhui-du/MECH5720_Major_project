@@ -3,6 +3,8 @@
 **Qi Wang · Sai S. Vissavajjhala · Jarvis Du · Marco Pham**  
 The University of Sydney | Major Project
 
+[Read the report](docs/report.pdf) · [Report source](docs/report_source/main.tex)
+
 We used a depth sensor to study blur as a printed target moves towards a camera. A manual guide keeps the target on its path while the fixed camera records one-second RAW exposures. We then use the measured depth history to reconstruct the changing image scale. A monitor beside the path supplies steady white or temporally coded light.
 
 Measured depth gave higher PSNR and SSIM than the matched endpoint-linear model in **5/6 independent coded-light trials**. The mean paired PSNR gain was **+3.04 dB**, with a sample standard deviation of **3.67 dB**. Below, we show all six results, including the cases where reconstruction did worse.
@@ -86,7 +88,7 @@ flowchart LR
 1. The camera integrates the moving printed pattern while the depth sensor records its approach. We also log the monitor's announced black/white states.
 2. We subtract RAW black levels, normalise by white level and average the two green samples in each Bayer cell. We then resize to 240 × 180 linear-grayscale pixels and filter invalid readings from the central 2 × 2 depth zones.
 3. Interpolated depth and light records describe the exposure. The endpoint calibration converts depth into image scale; a weighted sum of scaled views predicts the blurred photograph.
-4. We solve a non-blind, TV-regularised least-squares problem and score the methods in the same reference coordinates and mask.
+4. We solve a non-blind least-squares problem with total variation (TV) regularisation, then score the methods in the same reference coordinates and mask.
 
 The forward operator is
 
@@ -100,9 +102,9 @@ $$
 \min_{0\leq x\leq1}\frac12\lVert Ax-y\rVert_2^2+\lambda\mathrm{TV}(x).
 $$
 
-Here, `x` is the unknown sharp image and `y` the blurred photograph. `W` scales the image according to depth, and `w` gives its normalised illumination weight. We use λ = 0.002, 320 accelerated proximal-gradient iterations and 35 inner TV iterations. Axial expansion produces a different blur at each image position, so the inverse problem needs a spatially varying operator instead of a single uniform convolution PSF.
+Here, x is the unknown sharp image and y is the recorded blurred photograph. W scales the image according to depth, while w gives the normalised illumination weight. The accelerated solver is inspired by FISTA and uses an approximate TV step. We use λ = 0.002, 320 accelerated proximal-gradient iterations and 35 inner TV iterations. Axial expansion produces a different blur at each image position, so the inverse problem needs a spatially varying operator instead of a single uniform convolution PSF.
 
-For comparison, the endpoint-linear model joins the same start and end depths with a straight line. Both reconstructions use the same coded image, light weights, geometry, solver and scoring mask; the interior depth trajectory is the only difference. The saved-file label `constant` means constant depth velocity in this model. It does not mean a stationary target.
+For comparison, the endpoint-linear model joins the same start and end depths with a straight line. Both reconstructions use the same coded image, light weights, geometry, solver and scoring mask; the interior depth trajectory is the only difference. The saved-file label “constant” means constant depth velocity in this model. It does not mean a stationary target.
 
 The 48 integration bins come from interpolation of about 10 to 11 received depth frames. They do not increase the number of independent measurements. A static reference assists registration and shared contrast matching, so evaluation is reference assisted.
 
@@ -198,7 +200,7 @@ The supplied selections and registration belong to this dataset. For new capture
 
 The supplementary dataset comprises **40 runs and 1,239 DNGs**. Twelve primary motion pushes cross steady/coded illumination and smooth/variable motion, with three independent repeats in each cell. Two pilots and two weak-motion attempts are also retained, giving 16 motion attempts in the archive.
 
-The main comparison uses **six coded pushes**, with one selected exposure from each. `S` and `V` identify smooth and variable-push instructions; repeat numbers run from 1 to 3. All methods are scored on the same 28,327 pixels out of the 43,200-pixel image.
+The main comparison uses **six coded pushes**, with one selected exposure from each. S and V identify smooth and variable-push instructions; repeat numbers run from 1 to 3. All methods are scored on the same 28,327 pixels out of the 43,200-pixel image.
 
 | Trial | Input PSNR (dB) | Endpoint-linear PSNR (dB) | LiDAR PSNR (dB) | Input SSIM | Endpoint-linear SSIM | LiDAR SSIM |
 |---|---:|---:|---:|---:|---:|---:|
@@ -264,4 +266,12 @@ For a fresh preparation from RAW, use a separate copy of `analysis/`, install it
 - For a rebuild, measure the rail dimensions, mounting stiffness, aperture and optical-origin/ruler-zero relation. Those values were not recorded and cannot be recovered reliably from the photos.
 - Preserve scientific `.npz`/`.npy` arrays, raw logs and source hashes. Exclude virtual environments, bytecode, credentials and duplicate delivery ZIPs from the tracked code.
 
+## Method sources
 
+Temporal coding follows the idea of coded exposure photography [1], adapted here to monitor illumination and axial scaling. TV regularisation follows [2], and our accelerated proximal-gradient solver is inspired by FISTA [3]. Endpoint registration uses SIFT features [4]; image quality is evaluated with PSNR and SSIM [5].
+
+1. R. Raskar, A. Agrawal and J. Tumblin, “Coded exposure photography: motion deblurring using fluttered shutter,” ACM Transactions on Graphics, 25(3), 795–804, 2006. [DOI](https://doi.org/10.1145/1141911.1141957)
+2. L. I. Rudin, S. Osher and E. Fatemi, “Nonlinear total variation based noise removal algorithms,” Physica D, 60, 259–268, 1992. [DOI](https://doi.org/10.1016/0167-2789(92)90242-F)
+3. A. Beck and M. Teboulle, “A fast iterative shrinkage-thresholding algorithm for linear inverse problems,” SIAM Journal on Imaging Sciences, 2(1), 183–202, 2009. [DOI](https://doi.org/10.1137/080716542)
+4. D. G. Lowe, “Distinctive image features from scale-invariant keypoints,” International Journal of Computer Vision, 60(2), 91–110, 2004. [DOI](https://doi.org/10.1023/B:VISI.0000029664.99615.94)
+5. Z. Wang, A. C. Bovik, H. R. Sheikh and E. P. Simoncelli, “Image quality assessment: From error visibility to structural similarity,” IEEE Transactions on Image Processing, 13(4), 600–612, 2004. [DOI](https://doi.org/10.1109/TIP.2003.819861)
