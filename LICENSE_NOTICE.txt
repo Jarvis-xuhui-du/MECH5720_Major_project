@@ -1,7 +1,0 @@
-# Licence and attribution notice
-
-The original TMF8829 vendor driver carries AMS-OSRAM notices. Its supplied `acquisition/LICENSE-MIT.TXT` and `acquisition/LICENSE-GPL-2.0.TXT` are preserved unchanged; retain source-file headers and comply with the applicable upstream terms when redistributing those files. This notice does not replace either licence.
-
-The kit camera/viewer code may include course-provided material. Team edits, analysis code, report, photographs and acquired data are retained for the course handoff with their existing rights. No blanket licence over these mixed materials is granted by this packaging step. Before making a public repository, the authors must confirm permission for course material and select a licence for their own contributions and data. Do not describe the entire bundle as MIT-licensed merely because the vendor driver includes an MIT licence.
-
-Team named in the report: Jarvis Du, Qi Wang, Sai S. Vissavajjhala and Marco Pham. The supplied report remains subject to the course's authorship and AI-use disclosure requirements; verify the final submission against those requirements.
