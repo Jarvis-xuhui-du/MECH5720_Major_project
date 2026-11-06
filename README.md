@@ -97,7 +97,7 @@ $$
 and reconstruction solves approximately
 
 $$
-\min_{0\leq x\leq1}\frac12\lVert Ax-y\rVert_2^2+\lambda\operatorname{TV}(x).
+\min_{0\leq x\leq1}\frac12\lVert Ax-y\rVert_2^2+\lambda\mathrm{TV}(x).
 $$
 
 Here, `x` is the unknown sharp image and `y` the blurred photograph. `W` scales the image according to depth, and `w` gives its normalised illumination weight. We use λ = 0.002, 320 accelerated proximal-gradient iterations and 35 inner TV iterations. Axial expansion produces a different blur at each image position, so the inverse problem needs a spatially varying operator instead of a single uniform convolution PSF.
