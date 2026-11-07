@@ -191,7 +191,6 @@ cython_debug/
 # .idea/
 
 # Abstra
-#   Abstra is an AI-powered process automation framework.
 #   Ignore directories containing user credentials, local state, and settings.
 #   Learn more at https://abstra.io/docs
 .abstra/
@@ -230,8 +229,7 @@ __pycache__/
 Thumbs.db
 reproduced/
 
-# Full acquisition archive is distributed as a Release asset
-/data/
+# Keep the duplicate data archive out of Git; track the extracted data folder.
 /02_raw_data_release.zip
 
 # Keep analysis/cache and analysis/results: their scientific arrays are required.

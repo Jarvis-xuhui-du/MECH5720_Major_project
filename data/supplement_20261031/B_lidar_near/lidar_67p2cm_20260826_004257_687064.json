@@ -1,0 +1,26 @@
+{
+  "target_cm": 67.2,
+  "measured_from": "LiDAR sensor face; user-supplied ruler position",
+  "started_utc": "2026-08-25T14:42:57.687271+00:00",
+  "ended_utc": "2026-08-25T14:43:00.009886+00:00",
+  "mode": "8x8",
+  "roi_rows_1based": [
+    4,
+    5
+  ],
+  "roi_cols_1based": [
+    4,
+    5
+  ],
+  "frames_total": 23,
+  "frames_used": 22,
+  "frames_skipped_initial": 1,
+  "invalid_zero_values_excluded": true,
+  "distance_mm": 664.25,
+  "per_frame_roi_median_min_mm": 663.5,
+  "per_frame_roi_median_max_mm": 667.0,
+  "difference_from_ruler_mm": -7.75,
+  "method": "median of positive ROI values in each frame, then median across frames",
+  "raw_log": "/home/pi/tmf8829_driver_linux_userspace/supplement_20261031/B_lidar_near/lidar_67p2cm_20260826_004257_687064.txt",
+  "zones_csv": "/home/pi/tmf8829_driver_linux_userspace/supplement_20261031/B_lidar_near/lidar_67p2cm_20260826_004257_687064.csv"
+}
