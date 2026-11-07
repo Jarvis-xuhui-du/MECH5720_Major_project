@@ -28,7 +28,7 @@ w_k&=\frac{0.19+0.81u_k}{\sum_j(0.19+0.81u_j)},
 \end{aligned}
 \label{eq:forward}
 \end{equation}
-where $z_k$ is interpolated depth, $W[s(z_k)]$ scales about the fitted pivot, and $u_k$ is the logged binary state after the timing shift. The 48 midpoint bins approximate the exposure integral from 10--11 received depth frames. $W$ is implemented via sparse bilinear interpolation with replicated boundaries. The weights are an approximation of the relative irradiance with 0.19 floor on the illumination in the black state. Each of the columns of $ A $ is the response to one point in the image - a discrete point spread function (PSF). Expansion moves points farther from the fixed scaling pivot more strongly, so the PSF varies spatially across the image. Reconstruction therefore requires inverting a spatially varying operator.
+Here, $z_k$ is interpolated depth, $W[s(z_k)]$ scales the image about the fitted pivot, and $u_k$ is the logged binary state after the time shift. We approximate the exposure integral with 48 midpoint bins interpolated from 10--11 received depth frames. $W$ uses sparse bilinear interpolation with replicated boundaries. The weights approximate relative irradiance, with 0.19 as the illumination floor in the black state. Each of the columns of $ A $ is the response to one point in the image - a discrete point spread function (PSF). Expansion moves points farther from the fixed scaling pivot more strongly, so the PSF varies spatially across the image. Reconstruction therefore requires inverting a spatially varying operator.
 
 \subsection{TV-regularised reconstruction}
 Once the records and endpoint geometry fix $A$, we estimate the image by non-blind, TV-regularised least squares:
