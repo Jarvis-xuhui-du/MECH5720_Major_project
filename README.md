@@ -269,7 +269,7 @@ For a fresh preparation from RAW, use a separate copy of `analysis/`, install it
 
 ## Licence
 
-The team's original contributions may be reused for non-commercial teaching and academic research under [LICENSE.txt](LICENSE.txt), with attribution and the licence retained. Other uses require separate permission. Vendor and course-supplied materials keep their original terms; see [LICENSE_NOTICE.txt](LICENSE_NOTICE.txt). This is a limited-use permission, not a blanket MIT licence over the repository.
+The team's original contributions may be reused for non-commercial teaching and academic research under [LICENSE.txt](LICENSE.txt), with attribution and the licence retained. Other uses require separate permission.
 
 ## Method sources
 
