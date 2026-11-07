@@ -1,0 +1,38 @@
+Non-commercial Teaching and Research Permission
+
+Copyright (c) 2026 Jarvis Du, Qi Wang, Sai S. Vissavajjhala and Marco Pham.
+
+1. Scope
+This permission applies only to original material contributed and owned by the
+team in this project, including original analysis code, documentation, report
+text, photographs and acquired experimental data. It applies to those original
+experimental data in the raw-data-v1.0 release as well as in the repository.
+It does not relicense third-party or course-supplied material, original vendor
+drivers, borrowed target artwork, templates, or material carrying a separate
+notice. Where a file mixes original and third-party material, this permission
+applies only to the team's original portions, to the extent the team has the
+right to license them. Existing third-party permissions remain unaffected.
+
+2. Permitted use
+Permission is granted, without a fee, to use, copy, modify and share the covered
+original material solely for non-commercial teaching, coursework and academic
+research, provided that recipients:
+- identify the team, project and source repository;
+- retain this permission and any applicable attribution or licence notices;
+- identify modifications and do not present modified material as the original
+  team's unchanged measurements or results; and
+- do not imply endorsement by the authors or the University of Sydney.
+
+3. Reserved rights
+Commercial use, relicensing, and any use outside the permission above require
+separate written permission from the applicable rights holders. All rights not
+expressly granted are reserved. This is a source-available, limited-use
+permission, not an OSI-approved open-source licence. It does not impose new
+restrictions on material that is already available under another licence.
+
+4. No warranty
+The covered original material is provided "as is", without warranty of any kind.
+The authors accept no liability for its use to the extent permitted by law.
+This permission does not grant rights to third-party names, logos or trademarks.
+
+See LICENSE_NOTICE.txt for third-party and course-material exclusions.

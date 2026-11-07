@@ -29,7 +29,7 @@
 data/supplement_20261031/<condition>/<original-run>/camera_frames.csv
 ```
 
-RAW 数据包已经准备好，但本 README 尚未核实它是否已作为 Release 附件发布。可先在[仓库 Releases 页面](https://github.com/Jarvis-xuhui-du/MECH5720_Major_project/releases)查找 `02_raw_data_release.zip`；若没有，请向团队获取。源码 ZIP 不包含这些原始数据。提交前，团队还需发布数据包，并在这里补上带版本的直接下载链接。
+RAW 数据已发布为 [RAW acquisition data v1.0](https://github.com/Jarvis-xuhui-du/MECH5720_Major_project/releases/tag/raw-data-v1.0)。下载 [`02_raw_data_release.zip`](https://github.com/Jarvis-xuhui-du/MECH5720_Major_project/releases/download/raw-data-v1.0/02_raw_data_release.zip)，解压到仓库根目录。源码 ZIP 不包含这些原始数据。
 
 ### 2. 安装分析环境
 
@@ -259,12 +259,17 @@ analysis/
 data/supplement_20261031/        从 RAW 数据包单独解压得到
 reproduce.py                    关键图核对，以及可选的 RAW 重新重建
 requirements.txt                固定版本的数值计算依赖
-LICENSE_NOTICE.txt              来源和许可状态说明
+LICENSE.txt                     非商业教学科研复用许可
+LICENSE_NOTICE.txt              第三方来源及授权排除范围
 ```
 
 `analysis/source_checksums.json` 记录原始源文件的大小和 SHA256 值。原始数据包压缩后约为 284 MiB。解压时不要修改原始条件／采集文件夹的名称。早期的五次探索性试验数据集单独保留，没有并入这六次编码光试验。
 
 若要从 RAW 数据重新进行准备，请使用一份单独的 `analysis/` 副本，安装 `analysis/requirements.txt` 中的可选依赖，将 `MECH5720_DATA_ROOT` 设置为 `data/supplement_20261031` 的绝对路径，再依次运行 `prepare_analysis.py`、`run_reconstruction.py`、`summarize_results.py` 和 `make_figures.py`。重新进行 SIFT/RANSAC 配准时，结果可能因 OpenCV 版本而变化。核对报告数值时，请使用交付版本的冻结几何参数和 `reproduce.py`。
+
+## 使用许可
+
+团队原创内容按 [LICENSE.txt](LICENSE.txt) 允许用于非商业教学和学术研究，复用时须注明来源并保留许可；其他用途须另行取得许可。厂商及课程提供的材料保留原有授权，详见 [LICENSE_NOTICE.txt](LICENSE_NOTICE.txt)。这不是对整个仓库统一授予 MIT 许可。
 
 <a id="known-pitfalls"></a>
 

@@ -1,6 +1,6 @@
 \section{Reconstruction and Evaluation}
 \subsection{Linear images and empirical axial geometry}
-We correct DNG values using per-channel black levels and white level, average the two green samples per Bayer cell, then resize by area averaging. Inversion uses these linear images without JPEG processing or display gamma. SIFT matches and RANSAC similarity fits relate stationary early/late frames to the sharp reference; selected moving frames are excluded from endpoint fitting. Separate global 3rd/97th-percentile normalization of the input and reference assists contrast matching. All reconstructions share the input transform.
+We correct DNG values using per-channel black levels and white level, average the two green samples per Bayer cell, then resize by area averaging. The linear images for inversion are not JPEG-processed and do not apply any display gamma. SIFT feature matches and RANSAC similarity fits relate stationary early/late frames to the sharp reference; selected moving frames are excluded from endpoint fitting. The input and reference are separately globally normalized with the 3rd/97th-percentiles for contrast matching help. All reconstructions use the same input transform.
 
 \Needspace{8\baselineskip}
 Endpoint scales calibrate a restricted axial model. With far/near depths $z_f,z_n$, scale ratio $R$, reference depth $z_r$ and a fitted fixed pivot,
@@ -28,7 +28,7 @@ w_k&=\frac{0.19+0.81u_k}{\sum_j(0.19+0.81u_j)},
 \end{aligned}
 \label{eq:forward}
 \end{equation}
-where $z_k$ is interpolated depth, $W[s(z_k)]$ scales about the fitted pivot, and $u_k$ is the logged binary state after the timing shift. The 48 midpoint bins approximate the exposure integral from 10--11 received depth frames. Sparse bilinear interpolation implements $W$ with replicated boundaries. The weights approximate relative irradiance, including a 0.19 floor for illumination during black states. Each column of $A$ gives the response to an image point, a discrete point spread function (PSF). Expansion moves points farther from the pivot more strongly, so this PSF varies across the image. Reconstruction therefore inverts a spatially varying operator.
+where $z_k$ is interpolated depth, $W[s(z_k)]$ scales about the fitted pivot, and $u_k$ is the logged binary state after the timing shift. The 48 midpoint bins approximate the exposure integral from 10--11 received depth frames. $W$ is implemented via sparse bilinear interpolation with replicated boundaries. The weights are an approximation of the relative irradiance with 0.19 floor on the illumination in the black state. Each of the columns of $ A $ is the response to one point in the image - a discrete point spread function (PSF). Expansion moves points farther from the fixed scaling pivot more strongly, so the PSF varies spatially across the image. Reconstruction therefore requires inverting a spatially varying operator.
 
 \subsection{TV-regularised reconstruction}
 Once the records and endpoint geometry fix $A$, we estimate the image by non-blind, TV-regularised least squares:
@@ -42,10 +42,10 @@ The data term fits the recorded blur, while TV limits unstable fluctuations. We 
 \subsection{Scoring and numerical checks}
 We map all 16 attempts into one canonical reference frame and fix a geometry-only intersection mask before scoring (Fig.~\ref{fig:mask}). PSNR uses unit intensity range; Gaussian-window SSIM uses $\sigma=1.5$ and population covariance\cite{ssim}. Methods receive no separate post-reconstruction alignment or contrast fit. The reference is used for registration, normalization and scoring, making this a reference-assisted experiment.
 
-Identity, row-sum and adjoint errors are below $8\times10^{-7}$. Synthetic inversion improves PSNR from 13.99 to 27.15\,dB. Doubling 320 to 640 iterations changes PSNR by at most 0.049\,dB; using 96 instead of 48 bins changes it by at most 0.207\,dB. These checks test numerical consistency. The physical experiments test how well the model describes real captures.
+Identity, row-sum and adjoint errors are below $8\times10^{-7}$. Synthetic inversion improves PSNR from 13.99 to 27.15\,dB. Doubling the iterations from 320 to 640 changes PSNR by at most 0.049\,dB; changing the bins from 48 to 96 changes it by at most 0.207\,dB. These checks assess numerical integrity. The physical captures test how well the model describes practice.
 
 \begin{figure}[t]
 \centering\includegraphics[width=\columnwidth]{images/evaluation_mask.pdf}
-\caption{Common reference and scoring mask for every attempt and method. Red marks excluded pixels. Metrics use the remaining 28327 pixels (65.6\% of the $240\times180$ image), following the irregular interior boundary rather than a rectangular display crop.}
+\caption{A common reference and common mask for all trials and all methods. Excluded pixels marked in red. Scores use the remaining 28327 pixels (65.6\% of the $240\times180$ image) within the irregular mask, rather than only its boundary or a rectangular display crop.}
 \label{fig:mask}
 \end{figure}

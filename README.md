@@ -249,7 +249,8 @@ analysis/
 data/supplement_20261031/        Extracted separately from the RAW archive
 reproduce.py                    Key-figure verification and optional RAW replay
 requirements.txt                Pinned numerical dependencies
-LICENSE_NOTICE.txt              Provenance and licensing status
+LICENSE.txt                     Non-commercial teaching/research permission
+LICENSE_NOTICE.txt              Third-party provenance and exclusions
 ```
 
 `analysis/source_checksums.json` records the original source-file sizes and SHA256 values. The raw archive is approximately 284 MiB compressed. Extract it without renaming the original condition/run folders. The earlier five-trial exploratory dataset is separate and is not pooled into these six coded trials.
@@ -265,6 +266,10 @@ For a fresh preparation from RAW, use a separate copy of `analysis/`, install it
 - Use the same static-reference registration, contrast matching, mask and display range for all methods. Leave the reference unchanged and retain outcomes that score poorly.
 - For a rebuild, measure the rail dimensions, mounting stiffness, aperture and optical-origin/ruler-zero relation. Those values were not recorded and cannot be recovered reliably from the photos.
 - Preserve scientific `.npz`/`.npy` arrays, raw logs and source hashes. Exclude virtual environments, bytecode, credentials and duplicate delivery ZIPs from the tracked code.
+
+## Licence
+
+The team's original contributions may be reused for non-commercial teaching and academic research under [LICENSE.txt](LICENSE.txt), with attribution and the licence retained. Other uses require separate permission. Vendor and course-supplied materials keep their original terms; see [LICENSE_NOTICE.txt](LICENSE_NOTICE.txt). This is a limited-use permission, not a blanket MIT licence over the repository.
 
 ## Method sources
 
