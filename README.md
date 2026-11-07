@@ -27,7 +27,9 @@ Download or clone the repository, then extract the separate **`02_raw_data_relea
 
 ```text
 data/supplement_20261031/<condition>/<original-run>/camera_frames.csv
-```The RAW archive is available in [RAW acquisition data v1.0](https://github.com/Jarvis-xuhui-du/MECH5720_Major_project/releases/tag/raw-data-v1.0). Download [`02_raw_data_release.zip`](https://github.com/Jarvis-xuhui-du/MECH5720_Major_project/releases/download/raw-data-v1.0/02_raw_data_release.zip) and extract it into the repository root. The source-code ZIP does not include these data.
+```
+
+The RAW archive is available in [RAW acquisition data v1.0](https://github.com/Jarvis-xuhui-du/MECH5720_Major_project/releases/tag/raw-data-v1.0). Download [`02_raw_data_release.zip`](https://github.com/Jarvis-xuhui-du/MECH5720_Major_project/releases/download/raw-data-v1.0/02_raw_data_release.zip) and extract it into the repository root. The source-code ZIP does not include these data.
 
 ### 2. Install the analysis environment
 
