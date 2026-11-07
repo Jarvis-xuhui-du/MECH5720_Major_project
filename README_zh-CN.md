@@ -269,7 +269,7 @@ LICENSE_NOTICE.txt              第三方来源及授权排除范围
 
 ## 使用许可
 
-团队原创内容按 [LICENSE.txt](LICENSE.txt) 允许用于非商业教学和学术研究，复用时须注明来源并保留许可；其他用途须另行取得许可。厂商及课程提供的材料保留原有授权，详见 [LICENSE_NOTICE.txt](LICENSE_NOTICE.txt)。这不是对整个仓库统一授予 MIT 许可。
+团队原创内容按 [LICENSE.txt](LICENSE.txt) 允许用于非商业教学和学术研究，复用时须注明来源并保留许可；其他用途须另行取得许可。
 
 <a id="known-pitfalls"></a>
 
